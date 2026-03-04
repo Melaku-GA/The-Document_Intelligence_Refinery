@@ -1,0 +1,128 @@
+# Document Intelligence Refinery Configuration
+# 
+# This is the single source of truth for all pipeline parameters.
+# New document domains can be onboarded by editing only this file.
+
+triage:
+  # Origin type detection thresholds
+  min_character_density: 0.001
+  max_image_area_ratio_for_digital: 0.5
+  min_character_count_for_digital: 100
+  
+  # Layout complexity thresholds
+  min_columns_for_multicolumn: 2
+  min_table_area_ratio: 0.1
+  min_figure_count: 3
+  
+  # Language detection
+  supported_languages:
+    - en
+    - am
+  min_language_confidence: 0.7
+  
+  # Domain keywords - add new domains here
+  domain_keywords:
+    financial:
+      - revenue
+      - profit
+      - loss
+      - balance
+      - asset
+      - liability
+      - equity
+      - income
+      - expense
+      - fiscal
+      - budget
+      - audit
+      - financial
+      - quarterly
+      - annual
+      - earnings
+      - dividend
+    legal:
+      - contract
+      - agreement
+      - party
+      - liability
+      - warranty
+      - compliance
+      - regulation
+      - statute
+      - jurisdiction
+      - clause
+    technical:
+      - specification
+      - architecture
+      - implementation
+      - api
+      - system
+      - configuration
+      - deployment
+      - infrastructure
+    medical:
+      - diagnosis
+      - treatment
+      - patient
+      - symptom
+      - prescription
+      - clinical
+      - healthcare
+      - medication
+      - therapy
+
+extraction:
+  # Strategy A: Fast Text
+  fast_text_confidence_threshold: 0.65
+  min_characters_per_page: 100
+  max_image_ratio_for_fast_text: 0.3
+  
+  # Strategy B: Layout-Aware
+  layout_confidence_threshold: 0.5
+  enable_table_extraction: true
+  enable_figure_extraction: true
+  
+  # Strategy C: Vision
+  vision_confidence_threshold: 0.4
+  max_pages_for_vision: 10
+  max_cost_per_document: 5.0
+  
+  # Escalation chain
+  escalation_chain:
+    - fast_text
+    - minerulayout
+    - vision
+
+chunking:
+  max_chars: 800
+  max_tokens: 512
+  
+  # Rule enforcement
+  preserve_table_headers: true
+  preserve_figure_captions: true
+  preserve_numbered_lists: true
+  preserve_section_headers: true
+  resolve_cross_references: true
+  
+  # Validation
+  validate_chunk_rules: true
+  min_chunk_length: 50
+  max_chunk_length: 2000
+
+indexing:
+  output_dir: ".refinery/pageindex"
+  min_section_pages: 1
+  max_depth: 4
+  extract_entities: true
+  
+  # Entity patterns
+  entity_patterns:
+    organization: '\b[A-Z][a-zA-Z]*(?:Corporation|Company|Bank|Ministry|Agency|Institute|Authority)\b'
+    financial: '\b(?:Birr|ETB|\$|USD|EUR)\s*[\d,]+(?:\.\d{2})?\b'
+    date: '\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+\d{4}\b'
+    number: '\b\d+(?:\.\d+)?(?:\s*%|\s*billion|\s*million|\s*thousand)?\b'
+
+vector_store:
+  backend: in_memory
+  embedding_dim: 384
+  top_k: 5

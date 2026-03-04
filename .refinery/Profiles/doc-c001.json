@@ -1,0 +1,18 @@
+{
+  "document_id": "doc-c001",
+  "document_name": "Security_Vulnerability_Disclosure_Standard_Procedure_1.pdf",
+  "page_count": 42,
+  "is_native_digital": true,
+  "has_tables": false,
+  "has_images": true,
+  "actual_class": "C",
+  "origin_type": "NATIVE_DIGITAL",
+  "layout_complexity": "FIGURE_HEAVY",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "technical",
+  "estimated_extraction_cost": "NEEDS_LAYOUT_MODEL",
+  "avg_chars_per_page": 2200.0,
+  "image_area_ratio": 0.35,
+  "notes": "Technical security procedure document with diagrams and flowcharts."
+}

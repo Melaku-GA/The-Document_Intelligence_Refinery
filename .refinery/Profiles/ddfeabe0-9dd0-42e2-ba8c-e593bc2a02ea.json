@@ -1,0 +1,18 @@
+{
+  "document_id": "ddfeabe0-9dd0-42e2-ba8c-e593bc2a02ea",
+  "document_name": "Annual_Report_JUNE-2019.pdf",
+  "page_count": 32,
+  "is_native_digital": false,
+  "has_tables": true,
+  "has_images": true,
+  "actual_class": "A",
+  "origin_type": "mixed",
+  "layout_complexity": "figure_heavy",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "avg_chars_per_page": 954.125,
+  "image_area_ratio": 0.6749838390319881,
+  "notes": null
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "b3a6c6a0-8645-4f6a-8ed7-4ee16d600661",
+  "document_name": "Annual_Report_JUNE-2017.pdf",
+  "page_count": 104,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": true,
+  "actual_class": "A",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "avg_chars_per_page": 1476.6346153846155,
+  "image_area_ratio": 0.10728437173014113,
+  "notes": null
+}

@@ -1,0 +1,13 @@
+{
+  "document_name": "Audit Findings 2013",
+  "total_pages": 3,
+  "sections": [],
+  "metadata": {
+    "build_config": {
+      "output_dir": ".refinery/pageindex",
+      "min_section_pages": 1,
+      "max_depth": 4,
+      "extract_entities": true
+    }
+  }
+}

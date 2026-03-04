@@ -1,0 +1,201 @@
+# Extraction Rules and Thresholds Configuration
+# This file externalizes chunking constitution and extraction thresholds
+
+# ============================================
+# CHUNKING RULES
+# ============================================
+
+chunking:
+  # Maximum characters per chunk
+  max_chars: 800
+  
+  # Minimum characters per chunk
+  min_chars: 100
+  
+  # Overlap between chunks (in characters)
+  overlap: 50
+  
+  # Respect semantic boundaries
+  respect_boundaries: true
+  
+  # Boundary detection priorities (lower = higher priority)
+  boundary_priorities:
+    PAGE: 1        # Highest - always split at page breaks
+    SECTION: 2      # Section headers
+    PARAGRAPH: 3    # Paragraph breaks
+    SENTENCE: 4    # Sentence boundaries
+    TABLE: 2.5     # Table boundaries
+    FORCE: 0       # Forced split point
+
+# ============================================
+# EXTRACTION THRESHOLDS
+# ============================================
+
+extraction:
+  # Confidence thresholds
+  confidence_thresholds:
+    high: 0.95     # Auto-approve - no review needed
+    medium: 0.80   # Review recommended
+    low: 0.65     # Manual review required
+    
+  # Text quality thresholds
+  text_quality:
+    min_text_ratio: 0.1        # Minimum text-to-image ratio
+    min_chars_per_page: 10      # Minimum chars per page
+    max_image_ratio: 0.95       # Maximum image ratio before marking as scanned
+    
+  # Strategy selection thresholds
+  strategy_selection:
+    # Strategy A (Fast Text) - Native digital with simple layout
+    strategy_a:
+      max_pages: 1000
+      min_text_quality: 0.95
+      allowed_layouts:
+        - SINGLE_COLUMN
+        - MULTI_COLUMN
+      
+    # Strategy B (Layout Model) - Complex layouts
+    strategy_b:
+      min_text_quality: 0.70
+      allowed_layouts:
+        - TABLE_HEAVY
+        - FIGURE_HEAVY
+        - MULTI_COLUMN
+        - MIXED
+        
+    # Strategy C (Vision Model) - Scanned or complex
+    strategy_c:
+      allowed_origin_types:
+        - SCANNED_IMAGE
+        - MIXED
+
+# ============================================
+# DOCUMENT CLASSIFICATION RULES
+# ============================================
+
+classification:
+  # Document class detection
+  classes:
+    A:  # Annual Financial Reports
+      keywords:
+        - "annual report"
+        - "balance sheet"
+        - "income statement"
+        - "cash flow"
+        - "audit"
+        - "revenue"
+        - "expense"
+        - "profit"
+        - "loss"
+      min_table_ratio: 0.15
+      
+    B:  # Government/Legal
+      keywords:
+        - "budget"
+        - "procurement"
+        - "audit finding"
+        - "government"
+        - "ministry"
+        - "regional"
+        - "ethiopia"
+      min_table_ratio: 0.10
+      
+    C:  # Technical Assessment
+      keywords:
+        - "procedure"
+        - "technical"
+        - "security"
+        - "assessment"
+        - "survey"
+        - "performance"
+      min_image_ratio: 0.15
+      
+    D:  # Structured Data Reports
+      keywords:
+        - "price index"
+        - "cpi"
+        - "inflation"
+        - "index"
+        - "statistical"
+      min_table_ratio: 0.30
+
+# ============================================
+# VALIDATION RULES
+# ============================================
+
+validation:
+  # Chunk validation
+  chunk_validation:
+    min_chunk_length: 50
+    max_chunk_length: 2000
+    allow_empty_chunks: false
+    
+  # Page index validation
+  page_index:
+    require_page_numbers: true
+    require_chunk_references: true
+    
+  # Provenance requirements
+  provenance:
+    require_document_id: true
+    require_page_reference: true
+    require_extraction_method: true
+
+# ============================================
+# COST TIERS
+# ============================================
+
+cost_tiers:
+  FAST_TEXT_SUFFICIENT:
+    cost_per_page: 0.001
+    max_pages_per_doc: 100
+    
+  NEEDS_LAYOUT_MODEL:
+    cost_per_page: 0.005
+    max_pages_per_doc: 500
+    
+  NEEDS_VISION_MODEL:
+    cost_per_page: 0.020
+    max_pages_per_doc: 200
+
+# ============================================
+# OUTPUT FORMATS
+# ============================================
+
+output:
+  # Profile format
+  profile_format: json
+  
+  # Ledger format
+  ledger_format: jsonl
+  
+  # Index format
+  index_format: json
+  
+  # Include metadata in output
+  include_metadata:
+    - extraction_time
+    - strategy_used
+    - confidence_scores
+    - page_count
+    - chunk_count
+
+# ============================================
+# ERROR HANDLING
+# ============================================
+
+error_handling:
+  # Retry logic
+  max_retries: 3
+  retry_delay_seconds: 1
+  
+  # Fallback strategies
+  fallback_chain:
+    - Strategy A  # Try fast text first
+    - Strategy B  # Then layout model
+    - Strategy C  # Then vision model
+    
+  # Error thresholds
+  error_threshold:
+    max_consecutive_errors: 5
+    error_log_path: .refinery/errors.log

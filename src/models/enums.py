@@ -27,3 +27,13 @@ class ChunkType(str, Enum):
     TABLE = "table"
     FIGURE = "figure"
     LIST = "list"
+
+
+class ChunkBoundaryType(str, Enum):
+    """Types of chunk boundaries for splitting decisions."""
+    PARAGRAPH = "paragraph"
+    SENTENCE = "sentence"
+    SECTION = "section"
+    TABLE = "table"
+    PAGE = "page"
+    FORCE = "force"

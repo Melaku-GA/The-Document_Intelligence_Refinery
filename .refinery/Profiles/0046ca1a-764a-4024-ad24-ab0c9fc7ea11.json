@@ -1,0 +1,18 @@
+{
+  "document_id": "0046ca1a-764a-4024-ad24-ab0c9fc7ea11",
+  "document_name": "2013-E.C-Assigned-regular-budget-and-expense.pdf",
+  "page_count": 3,
+  "is_native_digital": false,
+  "has_tables": false,
+  "has_images": true,
+  "actual_class": "B",
+  "origin_type": "scanned_image",
+  "layout_complexity": "figure_heavy",
+  "language": "en",
+  "language_confidence": 0.5,
+  "domain_hint": null,
+  "estimated_extraction_cost": "needs_vision_model",
+  "avg_chars_per_page": 0.0,
+  "image_area_ratio": 1.0,
+  "notes": null
+}

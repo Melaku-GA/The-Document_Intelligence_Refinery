@@ -1,0 +1,13 @@
+{
+  "document_name": "CPI August 2025",
+  "total_pages": 13,
+  "sections": [],
+  "metadata": {
+    "build_config": {
+      "output_dir": ".refinery/pageindex",
+      "min_section_pages": 1,
+      "max_depth": 4,
+      "extract_entities": true
+    }
+  }
+}

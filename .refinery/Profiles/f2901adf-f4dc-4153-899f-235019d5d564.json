@@ -1,0 +1,18 @@
+{
+  "document_id": "f2901adf-f4dc-4153-899f-235019d5d564",
+  "document_name": "Consumer Price Index September 2025.pdf",
+  "page_count": 13,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": true,
+  "actual_class": "D",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "legal",
+  "estimated_extraction_cost": "needs_layout_model",
+  "avg_chars_per_page": 1387.4615384615386,
+  "image_area_ratio": 0.15460687285436062,
+  "notes": null
+}

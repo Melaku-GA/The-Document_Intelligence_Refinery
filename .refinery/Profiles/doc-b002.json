@@ -1,0 +1,18 @@
+{
+  "document_id": "doc-b002",
+  "document_name": "2013-E.C-Audit-finding-information.pdf",
+  "page_count": 22,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": false,
+  "actual_class": "B",
+  "origin_type": "NATIVE_DIGITAL",
+  "layout_complexity": "SINGLE_COLUMN",
+  "language": "en",
+  "language_confidence": 0.90,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "NEEDS_LAYOUT_MODEL",
+  "avg_chars_per_page": 1920.0,
+  "image_area_ratio": 0.04,
+  "notes": "Government audit findings document with tabular data and audit observations."
+}

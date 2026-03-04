@@ -1,0 +1,18 @@
+{
+  "document_id": "e58b626b-f243-4bcc-8474-24d071210594",
+  "document_name": "fta_performance_survey_final_report_2022.pdf",
+  "page_count": 155,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": false,
+  "actual_class": "C",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "avg_chars_per_page": 1675.9161290322581,
+  "image_area_ratio": 0.08259221790911617,
+  "notes": null
+}

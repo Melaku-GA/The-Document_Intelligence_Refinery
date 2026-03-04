@@ -1,0 +1,18 @@
+{
+  "document_id": "doc-a002",
+  "document_name": "Annual_Report_JUNE-2018.pdf",
+  "page_count": 95,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": true,
+  "actual_class": "A",
+  "origin_type": "NATIVE_DIGITAL",
+  "layout_complexity": "TABLE_HEAVY",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "NEEDS_LAYOUT_MODEL",
+  "avg_chars_per_page": 2680.0,
+  "image_area_ratio": 0.18,
+  "notes": "Annual financial report with complex table layouts, charts, and financial statements."
+}

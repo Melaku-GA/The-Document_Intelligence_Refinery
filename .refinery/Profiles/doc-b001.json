@@ -1,0 +1,18 @@
+{
+  "document_id": "doc-b001",
+  "document_name": "2013-E.C-Assigned-regular-budget-and-expense.pdf",
+  "page_count": 28,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": false,
+  "actual_class": "B",
+  "origin_type": "NATIVE_DIGITAL",
+  "layout_complexity": "SINGLE_COLUMN",
+  "language": "en",
+  "language_confidence": 0.90,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "NEEDS_LAYOUT_MODEL",
+  "avg_chars_per_page": 1850.0,
+  "image_area_ratio": 0.05,
+  "notes": "Government budget document with tabular data showing assigned budgets and expenses."
+}

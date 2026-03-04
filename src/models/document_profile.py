@@ -5,7 +5,14 @@ from .enums import OriginType, LayoutComplexity, ExtractionCostTier
 class DocumentProfile(BaseModel):
     document_id: str
     document_name: str
-
+    
+    # Additional fields for classification and processing
+    page_count: int = Field(default=0, description="Total number of pages")
+    is_native_digital: bool = Field(default=True, description="Whether document is native digital")
+    has_tables: bool = Field(default=False, description="Whether document contains tables")
+    has_images: bool = Field(default=False, description="Whether document contains images")
+    actual_class: Optional[str] = Field(default=None, description="Expected document class (A, B, C, D)")
+    
     origin_type: OriginType
     layout_complexity: LayoutComplexity
 

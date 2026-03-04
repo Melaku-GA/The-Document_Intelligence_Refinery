@@ -1,9 +1,17 @@
-{"timestamp": "2026-03-04T13:02:29.603099", "document_name": "CBE Annual Report 2006-7 .pdf", "strategy_used": "mineru_layout", "confidence_score": 0.905, "cost_estimate": "layout_aware", "escalated": false}
-{"timestamp": "2026-03-04T13:03:45.405449", "document_name": "Consumer Price Index August 2025.pdf", "strategy_used": "fast_text", "confidence_score": 1.0, "cost_estimate": 0.0013000000000000002, "escalated": false}
-{"timestamp": "2026-03-04T13:04:39.852581", "document_name": "Consumer Price Index August 2025.pdf", "strategy_used": "fast_text", "confidence_score": 1.0, "cost_estimate": 0.0013000000000000002, "escalated": false}
-{"timestamp": "2026-03-04T13:05:29.338004", "document_name": "CBE Annual Report 2006-7 .pdf", "strategy_used": "mineru_layout", "confidence_score": 0.905, "cost_estimate": "layout_aware", "escalated": false}
-{"timestamp": "2026-03-04T13:06:29.122886", "document_name": "2013-E.C-Assigned-regular-budget-and-expense.pdf", "strategy_used": "mineru_layout", "confidence_score": 0.905, "cost_estimate": "layout_aware", "escalated": false}
-{"timestamp": "2026-03-04T13:07:14.311952", "document_name": "Annual_Report_JUNE-2017.pdf", "strategy_used": "fast_text", "confidence_score": 1.0, "cost_estimate": 0.010400000000000001, "escalated": false}
-{"timestamp": "2026-03-04T13:09:44.692483", "document_name": "Annual_Report_JUNE-2017.pdf", "strategy_used": "fast_text", "confidence_score": 1.0, "cost_estimate": 0.010400000000000001, "escalated": false}
-{"timestamp": "2026-03-04T13:10:31.463923", "document_name": "Annual_Report_JUNE-2017.pdf", "strategy_used": "fast_text", "confidence_score": 1.0, "cost_estimate": 0.010400000000000001, "escalated": false}
-{"timestamp": "2026-03-04T13:11:38.274943", "document_name": "Consumer Price Index August 2025.pdf", "strategy_used": "fast_text", "confidence_score": 1.0, "cost_estimate": 0.0013000000000000002, "escalated": false}
+{"timestamp": "2026-03-04T21:46:48.429660", "document_name": "Annual Report 2017", "document_class": "A", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:47:26.572503", "document_name": "Annual Report 2018", "document_class": "A", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:47:43.570305", "document_name": "Annual Report 2019", "document_class": "A", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:47:43.626258", "document_name": "Audited Financial Statement 2018", "document_class": "A", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:47:43.669035", "document_name": "Audited Financial Statement 2020", "document_class": "A", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:47:43.709538", "document_name": "E.C Budget 2013", "document_class": "B", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:47:43.760648", "document_name": "Audit Findings 2013", "document_class": "B", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:47:43.802612", "document_name": "Procurement Info 2013", "document_class": "B", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:48:08.404232", "document_name": "Tax Expenditure 2021-22", "document_class": "B", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:48:08.446558", "document_name": "Security Vulnerability Procedure 1", "document_class": "C", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:48:08.514010", "document_name": "Security Vulnerability Procedure 2", "document_class": "C", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:48:41.979243", "document_name": "FTA Performance Survey 2022", "document_class": "C", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:48:43.265318", "document_name": "Pharmaceutical Manufacturing Opportunities", "document_class": "C", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:48:55.741765", "document_name": "CPI June 2025", "document_class": "D", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:49:03.754327", "document_name": "CPI July 2025", "document_class": "D", "status": "error", "error": "list index out of range"}
+{"timestamp": "2026-03-04T21:49:15.717853", "document_name": "CPI August 2025", "document_class": "D", "status": "error", "error": "'PageIndex' object has no attribute 'sections'"}
+{"timestamp": "2026-03-04T21:49:18.829400", "document_name": "CPI September 2025", "document_class": "D", "status": "error", "error": "list index out of range"}

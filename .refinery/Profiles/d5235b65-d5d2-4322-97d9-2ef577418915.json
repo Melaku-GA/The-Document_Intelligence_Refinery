@@ -1,0 +1,18 @@
+{
+  "document_id": "d5235b65-d5d2-4322-97d9-2ef577418915",
+  "document_name": "Annual_Report_JUNE-2018.pdf",
+  "page_count": 92,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": true,
+  "actual_class": "A",
+  "origin_type": "native_digital",
+  "layout_complexity": "table_heavy",
+  "language": "en",
+  "language_confidence": 0.95,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "needs_layout_model",
+  "avg_chars_per_page": 1698.0978260869565,
+  "image_area_ratio": 0.12118986331552126,
+  "notes": null
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "doc-d003",
+  "document_name": "Consumer Price Index August 2025.pdf",
+  "page_count": 14,
+  "is_native_digital": true,
+  "has_tables": true,
+  "has_images": false,
+  "actual_class": "D",
+  "origin_type": "NATIVE_DIGITAL",
+  "layout_complexity": "TABLE_HEAVY",
+  "language": "en",
+  "language_confidence": 0.92,
+  "domain_hint": "financial",
+  "estimated_extraction_cost": "NEEDS_LAYOUT_MODEL",
+  "avg_chars_per_page": 3150.0,
+  "image_area_ratio": 0.02,
+  "notes": "Structured data report with CPI tables showing index values by category."
+}

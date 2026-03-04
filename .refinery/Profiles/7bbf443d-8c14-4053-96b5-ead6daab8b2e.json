@@ -1,0 +1,18 @@
+{
+  "document_id": "7bbf443d-8c14-4053-96b5-ead6daab8b2e",
+  "document_name": "2020_Audited_Financial_Statement_Report.pdf",
+  "page_count": 3,
+  "is_native_digital": false,
+  "has_tables": false,
+  "has_images": true,
+  "actual_class": "A",
+  "origin_type": "scanned_image",
+  "layout_complexity": "figure_heavy",
+  "language": "en",
+  "language_confidence": 0.5,
+  "domain_hint": null,
+  "estimated_extraction_cost": "needs_vision_model",
+  "avg_chars_per_page": 0.0,
+  "image_area_ratio": 1.0,
+  "notes": null
+}
